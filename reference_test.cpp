@@ -18,6 +18,10 @@ void f(const SA& acr) {
 void f(SA &&arr) {
     std::cout << "rvalue reference version called" << std::endl;
 }
+void f() {
+    auto i = new SA();
+    std::cout << i->i << std::endl;
+}
 int main(void) {
     SA sa;
 
@@ -31,6 +35,7 @@ int main(void) {
     f(sar);
     f(sarr);
     f(std::move(sar));
+    std::string s;
 
 
 

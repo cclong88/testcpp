@@ -14,7 +14,7 @@ set(PACKAGE_TARNAME   "${PACKAGE_NAME}-${PACKAGE_VERSION}")
 
 set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
 project(${PACKAGE_NAME} CXX)
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 add_compile_options("-g" "-Wall" "-stdlib=libc++")
 
